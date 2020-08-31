@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'yj6q6=l#2v$a29@mxb0*^0pt%(qz@njc^!3^di&jp$p-rm1x)d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['image-api-invoid.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
