@@ -4,13 +4,36 @@
     <title>Invoid Assessment</title>
 </head>
 <body>
-    <div class="form">
-        <form action="upload" method="POST" enctype="multipart/form-data">
+
+    <div style="margin-top: 30px; margin-left: 30px;">
+        <img src="https://i.ibb.co/2k0ctJf/invoid.png">
+        <h2>Django API to convert image into base64 and md5 hash</h2>
+
+    <div id="grp">
+        <form class="form" action="upload" method="POST" enctype="multipart/form-data">
+
             {%csrf_token%}
-            <input type="file" name="image" placeholder="Select Image">
-            <input type="submit" value="Register">
+            <label for="upload" class="block">
+                    Choose...
+                </label>
+            <input style="display: none;" id="upload" type="file" name="image">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" class="block" style="border:none;" value="Submit">
+
         </form>
     </div>
-    
+    </div>
 </body>
+<style>
+.block{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #39D2B4;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+</style>
 </html>
