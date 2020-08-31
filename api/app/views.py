@@ -3,7 +3,6 @@ from django.http import HttpResponse, JsonResponse
 import hashlib
 import base64
 import os
-from PIL import Image
 import urllib.request
 import requests
 # Create your views here.
